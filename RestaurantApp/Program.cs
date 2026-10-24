@@ -13,3 +13,15 @@ namespace RestaurantApp
         }
     }
 }
+public class Restaurant
+{
+    public int  Id { get; set; }
+    public string Name { get; set; }
+    public int Type {get; set; }
+    public int Rate { get; set; }
+
+    public Restaurant(int id,string name,string type,double rate)
+    {
+
+    }
+}
