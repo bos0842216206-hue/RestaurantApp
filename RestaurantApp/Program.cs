@@ -17,11 +17,12 @@ namespace RestaurantApp
              new Restaurant(3, "Din Tai Fung", "Taiwanese Cuisine", 4.7),
              
              new Restaurant(4, "Sushi Hiro", "Japanese", 4.8),
-             new Restaurant(5, "The Pizza Company", "Italian ", 4.9)
+             new Restaurant(5, "The Pizza Company", "Italian", 4.9)
            };
             foreach (var item in restaurants)
            {
                Console.WriteLine($"{item.Name} Type:{item.Type} -- {item.Rate}");
+               Console.WriteLine($"จำนวนร้านทั้งหมด:{restaurants.Count}");
            }
         }
          
