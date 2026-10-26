@@ -16,14 +16,19 @@ namespace RestaurantApp
              new Restaurant(2, "Donglaishun Hot Pot", "Hot Pot", 4.6),
              new Restaurant(3, "Din Tai Fung", "Taiwanese Cuisine", 4.7),
              
-             new Restaurant(4, "Sushi Hiro", "Japanese", 4.8),
-             new Restaurant(5, "The Pizza Company", "Italian", 4.9)
+             new Restaurant(4, "Sushi Hiro", "Japanese", 4.2),
+             new Restaurant(5, "The Pizza Company", "Italian", 4.8)
            };
             foreach (var item in restaurants)
            {
                Console.WriteLine($"{item.Name} Type:{item.Type} -- {item.Rate}");
-               Console.WriteLine($"จำนวนร้านทั้งหมด:{restaurants.Count}");
+              
            }
+            Console.WriteLine($"จำนวนร้านทั้งหมด:{restaurants.Count}");
+
+            double average = restaurants.Average(item => item.Rate);
+
+            Console.WriteLine($"avg :{average}");
         }
          
     }
